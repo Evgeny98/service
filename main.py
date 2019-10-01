@@ -4,6 +4,13 @@ import redis
 
 SET_NAME = 'numbers'
 
+
+DB_HOST = os.getenv['DB_HOST']
+DB_PORT = os.getenv['DB_PORT']
+DB_NAME = os.getenv['DB_NAME']
+APP_PORT = os.getenv['APP_PORT']
+APP_HOST = os.getenv['DB_HOST']
+
 logging.basicConfig()
 
 r = redis.Redis(host='redis', port=6379, db=0)
